@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/css/w3.css">
+<head>
+    <title>W3.CSS Template</title> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/w3.css">
+    <script type="text/javascript" src="js/jquery.min_1.12.4.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
 
 
 <body>
@@ -23,12 +27,15 @@
     </div>
 
     <!-- Header -->
+    
     <header class="w3-display-container w3-content w3-wide" id="home">
         <div style="background-color: #E6E3E0; width: 100vw;
-        height: 100vh;" >
-        <div class="w3-display-middle" style="text-align: center; width: 100vw;">
-            <img class="w3-image" src="/img/background.jpg" alt="HHWimage" style="min-width: 400px">
-        </div>
+        height: 95vh;" >
+            <div class="w3-display-middle" style="text-align: center; width: 100vw;">
+                <img class="big-img w3-image" src="/img/background.jpg" alt="HHWimage" >
+            </div>
+            
+            
             <div class="w3-display-middle w3-margin-top w3-center" style="margin: 0 auto;">
                 <h1 class="w3-small">
                     <span>
@@ -40,6 +47,13 @@
                 </h1>
             </div>
         </div>
+        <div id="ScrollDown" style="text-align: center;">
+            <a href="#Intro" >
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="28px" height="29px" viewBox="0 0 28 29">
+                    <polygon class="st0" points="14.273,28.424 0.497,14.647 2.618,12.526 14.273,24.182 25.962,12.493 28.083,14.614"></polygon>
+                </svg>
+            </a>
+        </div>
     </header>
 
     <!-- Page content -->
@@ -47,112 +61,85 @@
 
         <!-- Intro Section -->
         <div class="w3-container w3-padding-32" id="Intro">
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><b></b>Intro</h3>
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><b>Intro</b></h3>
         </div>
 
         <div class="w3-row-padding">
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-                    <img src="/w3images/house5.jpg" alt="House" style="width:100%">
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-                    <img src="/w3images/house2.jpg" alt="House" style="width:100%">
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-                    <img src="/w3images/house3.jpg" alt="House" style="width:100%">
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-                    <img src="/w3images/house4.jpg" alt="House" style="width:100%">
+            <div style="text-align: center;">
+                <img src="/img/hyunsun.png" alt="hyunsun">
+                <h3>Seong Hyun Sun</h3>
+                <p class="w3-opacity">Developer</p>
+                <p>I am a student at Gachon University and majoring in computer engineering. I want to share various IT information</p>
+                <div style="text-align: center">
+                    <a href="#Contack" class="w3-bar-item w3-button" style="background-color: #fff">Contact</a>
                 </div>
             </div>
         </div>
-
-        <div class="w3-row-padding">
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-                    <img src="/w3images/house2.jpg" alt="House" style="width:99%">
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-                    <img src="/w3images/house5.jpg" alt="House" style="width:99%">
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-                    <img src="/w3images/house4.jpg" alt="House" style="width:99%">
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-                    <img src="/w3images/house3.jpg" alt="House" style="width:99%">
-                </div>
-            </div>
-        </div>
+        <br />
+        <br />
+        <br />
+        <br />
 
         <!-- Github Section -->
         <div class="w3-container w3-padding-32" id="Github">
             <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Github</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
+            <p>
+                매일 매일 잔디를 심자! 
             </p>
+            
+            <a class="gitButton" href="https://github.com/dddddun" title="Git">
+                Git
+            </a>&nbsp;
+            <a class="gitButton" href="https://facebook.com" title="Facebook">
+                Facebook
+            </a>&nbsp;
+            <a class="gitButton" href="https://pinterest.co.kr" title="Pinterest">
+                Pinterest
+            </a>&nbsp;
+            <a class="gitButton" href="https://youtube.com" title="Youtube">
+                Youtube
+            </a>&nbsp;
         </div>
-
+        <br />
+        <br />
+        <br />
+        <br />
         
        <!-- Project Section -->
         <div class="w3-container w3-padding-32" id="Project">
             <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Project</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
+            <p>
+             아직 부족한 실력이지만 차근차근 진행하고 있습니다. 모든 프로젝트의 코드는 Git에 공개하고 있습니다. 
             </p>
         </div>
 
         <div class="w3-row-padding w3-grayscale">
             <div class="w3-col l3 m6 w3-margin-bottom">
-                <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-                <h3>John Doe</h3>
-                <p class="w3-opacity">CEO & Founder</p>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                <img src="/img/project1.png" alt="Project01" style="width:100%">
+                <h3>코로나 바이러스 원천차단 시스템</h3>
+                <p class="w3-opacity">NodeJs, Express</p>
+                <p>졸업 프로젝트. 코로나 바이러스의 확산을 방지하기 위한 목적으로 진행하였습니다. 온도를 감지하여 출입문을 통제하고, 인공지능을 사용해 실내인원의 마스크 착용여부를 체크하여 관리자에게 알립니다. 또한 실내 환경을 제어할 수 있는 통합 관제 서비스입니다.</p>
+                <p><button id="project01" class="w3-button w3-light-grey w3-block">Contact</button></p>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
-                <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-                <h3>Jane Doe</h3>
-                <p class="w3-opacity">Architect</p>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                <img src="/img/project2.png" alt="Project02" style="width:100%">
+                <h3>ASP.NET 게시판</h3>
+                <p class="w3-opacity">ASP.NET</p>
+                <p>ASP.NET을 사용하여 게시글 목록, 수정, 삭제, 댓글, 로그인, 회원가입, 비밀번호 수정 등 의 기능을 갖춘 웹 페이지입니다.</p>
+                <p><button id="project02" class="w3-button w3-light-grey w3-block">Contact</button></p>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
-                <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
-                <h3>Mike Ross</h3>
-                <p class="w3-opacity">Architect</p>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
-                <h3>Dan Star</h3>
-                <p class="w3-opacity">Architect</p>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                <img src="/img/project3.png" alt="Project03" style="width:100%">
+                <h3>개인 페이지</h3>
+                <p class="w3-opacity">HTML5, CSS, JS</p>
+                <p>반응형으로 작성한 웹 페이지 입니다.</p>
+                <p><button id="project03" class="w3-button w3-light-grey w3-block">Contact</button></p>
             </div>
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
        
         <!-- Contact Section -->
         <div class="w3-container w3-padding-32" id="Contack">
@@ -163,15 +150,10 @@
                 <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
                 <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
                 <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
-                <button class="w3-button w3-black w3-section" type="submit">
+                <button class="w3-button w3-black w3-section" type="submit" >
                     <i class="fa fa-paper-plane"></i> SEND MESSAGE
                 </button>
             </form>
-        </div>
-
-        <!-- Image of location/map -->
-        <div class="w3-container">
-            <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
         </div>
 
         <!-- End page content -->
