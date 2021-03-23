@@ -1,7 +1,7 @@
 # Responsive-Web
-반응형 웹 페이지 만들기
+반응형 웹 포트폴리오 만들기
 
-포트폴리오 페이지
+
 
 ![KakaoTalk_Photo_2021-03-23-23-37-55](https://user-images.githubusercontent.com/67749539/112164169-029c0e80-8c31-11eb-954c-61b304536749.jpeg)
 ![KakaoTalk_Photo_2021-03-23-23-38-11](https://user-images.githubusercontent.com/67749539/112164204-09c31c80-8c31-11eb-9504-ca86d3d83bce.jpeg)
